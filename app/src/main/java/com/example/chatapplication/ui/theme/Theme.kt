@@ -9,28 +9,39 @@ import androidx.compose.material3.dynamicDarkColorScheme
 import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 
 private val DarkColorScheme = darkColorScheme(
-    primary = Purple80,
-    secondary = PurpleGrey80,
-    tertiary = Pink80
+    primary = ChatPrimaryDark,
+    secondary = ChatSecondaryDark,
+    tertiary = Pink80,
+    background = BackgroundDark,
+    surface = SurfaceDark,
+    onPrimary = TextOnPrimary,
+    onSecondary = TextOnPrimary,
+    onBackground = Color.White,
+    onSurface = Color.White,
+    primaryContainer = UserBubbleDark,
+    secondaryContainer = AiBubbleDark,
+    onPrimaryContainer = TextOnPrimary,
+    onSecondaryContainer = Color.White
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = Purple40,
-    secondary = PurpleGrey40,
-    tertiary = Pink40
-
-    /* Other default colors to override
-    background = Color(0xFFFFFBFE),
-    surface = Color(0xFFFFFBFE),
-    onPrimary = Color.White,
-    onSecondary = Color.White,
-    onTertiary = Color.White,
-    onBackground = Color(0xFF1C1B1F),
-    onSurface = Color(0xFF1C1B1F),
-    */
+    primary = ChatPrimaryLight,
+    secondary = ChatSecondaryLight,
+    tertiary = Pink40,
+    background = BackgroundLight,
+    surface = SurfaceLight,
+    onPrimary = TextOnPrimary,
+    onSecondary = TextOnPrimary,
+    onBackground = TextPrimary,
+    onSurface = TextPrimary,
+    primaryContainer = UserBubbleLight,
+    secondaryContainer = AiBubbleLight,
+    onPrimaryContainer = TextOnPrimary,
+    onSecondaryContainer = TextPrimary
 )
 
 @Composable
